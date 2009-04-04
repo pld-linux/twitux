@@ -17,6 +17,9 @@ BuildRequires:	gtk+2-devel >= 2:2.14.0
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	iso-codes >= 0.35
 BuildRequires:	libcanberra-gtk-devel >= 0.4
+BuildRequires:	libnotify-devel
+BuildRequires:	libsexy-devel
+BuildRequires:	libsoup-devel >= 2.4.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 1:2.6.16
 BuildRequires:	pkgconfig
