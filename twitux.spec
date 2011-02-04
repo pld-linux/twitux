@@ -2,10 +2,10 @@ Summary:	Twitux - a GTK+ Twitter client
 Summary(pl.UTF-8):	Twitux - oparty na GTK+ klient Twittera
 Name:		twitux
 Version:	0.69
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/twitux/%{name}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/twitux/%{name}-%{version}.tar.bz2
 # Source0-md5:	e51162151cc59623d95a0cfe3624d254
 URL:		http://live.gnome.org/DanielMorales/Twitux
 BuildRequires:	GConf2-devel
@@ -30,7 +30,7 @@ BuildRequires:	libxml2-devel >= 1:2.6.16
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
-Requires(post,postun):	gtk+2
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,preun):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
