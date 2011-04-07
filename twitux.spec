@@ -2,7 +2,7 @@ Summary:	Twitux - a GTK+ Twitter client
 Summary(pl.UTF-8):	Twitux - oparty na GTK+ klient Twittera
 Name:		twitux
 Version:	0.69
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/Communications
 Source0:	http://downloads.sourceforge.net/twitux/%{name}-%{version}.tar.bz2
