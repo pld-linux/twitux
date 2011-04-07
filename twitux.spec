@@ -7,6 +7,7 @@ License:	GPL v2+
 Group:		Applications/Communications
 Source0:	http://downloads.sourceforge.net/twitux/%{name}-%{version}.tar.bz2
 # Source0-md5:	e51162151cc59623d95a0cfe3624d254
+Patch0:		%{name}-libnotify.patch
 URL:		http://live.gnome.org/DanielMorales/Twitux
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.59
@@ -43,6 +44,7 @@ Twitux jest opartym na GTK+ klientem Twittera.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__glib_gettextize}

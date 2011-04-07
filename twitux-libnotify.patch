@@ -1,0 +1,16 @@
+--- twitux-0.69/src/twitux-app.c~	2009-01-25 02:24:00.000000000 +0100
++++ twitux-0.69/src/twitux-app.c	2011-04-07 17:16:43.453316407 +0200
+@@ -1446,8 +1446,11 @@
+ 
+ 		notification = notify_notification_new (PACKAGE_NAME,
+ 												msg,
+-												"twitux",
+-												NULL);
++												"twitux"
++#if !defined(NOTIFY_VERSION_MINOR) || (NOTIFY_VERSION_MAJOR == 0 && NOTIFY_VERSION_MINOR < 7)
++												, NULL
++#endif
++												);
+ 
+ 		notify_notification_set_timeout (notification, 8 * 1000);
+ 		notify_notification_show (notification, &error);
